@@ -1,10 +1,18 @@
 import React from "react";
 
 const Hello = () => {
-  
-  const [name, setname] = useState('');
-  
-  return <div>{name}</div>;
+  const [name, setName] = useState("");
+
+  const writeName = () => {
+    setName("hello man");
+  };
+
+  return (
+    <div>
+      {writeName}
+      {name}
+    </div>
+  );
 };
 
 export default Hello;
